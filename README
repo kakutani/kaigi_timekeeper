@@ -8,7 +8,7 @@ Initially, this application was written for Tokyo RubyKaigi01.
 
 http://kakutani.com/products/kaigi_timekeeper/
 
-RECOMMEND: Browse via a box 7barPBD font installed.
+RECOMMEND: Browse via a box SEVENBAR bold font (7barPBd) installed.
 (the font is available on http://www.trojanbear.net/omake.htm )
 
 === Usage
@@ -24,7 +24,7 @@ Kaigi Timekeepr hotkeys:
 Kaigi TimeKeeper requires local proxy http server to workaround the Flash security model.
 (If you don't need to remain minutes anouncements w/ voice announcement, proxy server running will be optional.)
 
-0. Install digital Quartz clock font(named '7barPBd') via http://www.trojanbear.net/omake.htm
+0. Install SEVENBAR bold font(named '7barPBd') via http://www.trojanbear.net/omake.htm
 1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
 2. $ ruby timekeepersrv
    (If you don't have ruby, you can write similar http proxy.)
@@ -42,6 +42,6 @@ Kakutani Shintaro (shintaro at kakutani dot com), http://kakutani.com
 
 === Credits
 
-* Troyan Bear for quartz clock font '7barPBd'. It's free. Awesome! http://www.trojanbear.net/omake.htm
+* troyjanbear.net for quartz clock font '7barPBd'. It's free. Awesome! http://www.trojanbear.net/omake.htm
 * Unou Labs for soundapi: http://labs.unoh.net/2006/11/javascriptmp3.html
 * Miho Suzuki (also known as Suzune-Miho) for amazing announce voice suites.

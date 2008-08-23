@@ -9,8 +9,7 @@ http://regional.rubykaigi.org/tokyo01
 
 http://kakutani.com/products/kaigi_timekeeper/
 
-タイマー用のデジタル時計フォントをインストールしておいてください('7barPBd')
-入手先は、 http://www.trojanbear.net/omake.htm です。
+タイマー用のデジタル時計表示用にSEVENBAR boldフォント('7barPBd')をインストールしておいてください。入手先は、 http://www.trojanbear.net/omake.htm です。
 
 === 使い方
 
@@ -28,8 +27,7 @@ Kaigi Timekeeprで音声による残り時間アナウンスを行うために�
 (あるいはネットワーク上に配置で利用してください)。
 これは、Flashのセキュリティモデル上の制限です。
 
-0. タイマー用のデジタル時計フォントをインストールしておいてください('7barPBd')
-   入手先は、 http://www.trojanbear.net/omake.htm です。
+0. タイマー用のデジタル時計表示用にSEVENBAR boldフォント('7barPBd')をインストールしておいてください。入手先は、 http://www.trojanbear.net/omake.htm です。
 1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
 2. $ ruby timekeepersrv
    (HTTPプロキシサーバなら何でもよいです)
