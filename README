@@ -1,0 +1,47 @@
+== Kaigi Timekeeper
+
+'Kaigi Timekeepr' is a browser based Timekeeper application for conferences.
+Initially, this application was written for Tokyo RubyKaigi01.
+(That is an Regional RubyKaigi instance, http://regional.rubykaigi.org/tokyo01)
+
+=== Live Demo
+
+http://kakutani.com/products/kaigi_timekeeper/
+
+RECOMMEND: Browse via a box 7barPBD font installed.
+(the font is available on http://www.trojanbear.net/omake.htm )
+
+=== Usage
+
+Kaigi Timekeepr hotkeys:
+
+* 'c'      - configuration
+* 'SPACE'  - start / stop (pause/resume is not supported so far.)
+* 'r','left arrow' - rewind to initial status.
+
+=== Installation
+
+Kaigi TimeKeeper requires local proxy http server to workaround the Flash security model.
+(If you don't need to remain minutes anouncements w/ voice announcement, proxy server running will be optional.)
+
+0. Install digital Quartz clock font(named '7barPBd') via http://www.trojanbear.net/omake.htm
+1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
+2. $ ruby timekeepersrv
+   (If you don't have ruby, you can write similar http proxy.)
+3. http://localhost:8111 via some web browser.
+  (8111 is default and configurable.)
+4(optional). Some fullscreen utility should be useful. Megazoomer on OSX,for example.
+
+=== Repository
+
+git://github.com/kakutani/kaigi_timekeeper.git
+
+=== Author(s)
+
+Kakutani Shintaro (shintaro at kakutani dot com), http://kakutani.com
+
+=== Credits
+
+* Troyan Bear for quartz clock font '7barPBd'. It's free. Awesome! http://www.trojanbear.net/omake.htm
+* Unou Labs for soundapi: http://labs.unoh.net/2006/11/javascriptmp3.html
+* Miho Suzuki (also known as Suzune-Miho) for amazing announce voice suites.

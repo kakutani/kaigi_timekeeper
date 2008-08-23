@@ -1,0 +1,52 @@
+== Kaigi Timekeeper
+
+'Kaigi Timekeepr'はブラウザベースのタイムキープ用アプリケーションです。
+カンファレンスなどで使うことを想定しています。
+当初、このアプリケーションは東京Ruby会議01のタイムキープのために開発されました。
+http://regional.rubykaigi.org/tokyo01
+
+=== ライブデモ
+
+http://kakutani.com/products/kaigi_timekeeper/
+
+タイマー用のデジタル時計フォントをインストールしておいてください('7barPBd')
+入手先は、 http://www.trojanbear.net/omake.htm です。
+
+=== 使い方
+
+Kaigi Timekeeperの操作にはホットキーを使います。
+
+* 'c'      - 設定を行います
+* 'SPACE'  - カウントダウンの開始と終了に使います
+             (一時停止/再開はいまのところサポートしていません)
+* 'r','<-' - カウントダウンを中止して、表示を巻き戻します
+
+=== インストール
+
+Kaigi Timekeeprで音声による残り時間アナウンスを行うためには、
+ローカルにhttpプロキシサーバが必要です
+(あるいはネットワーク上に配置で利用してください)。
+これは、Flashのセキュリティモデル上の制限です。
+
+0. タイマー用のデジタル時計フォントをインストールしておいてください('7barPBd')
+   入手先は、 http://www.trojanbear.net/omake.htm です。
+1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
+2. $ ruby timekeepersrv
+   (HTTPプロキシサーバなら何でもよいです)
+3. ブラウザで http://localhost:8111 にアクセスしてください
+  (8111 はtimekeepersrvのデフォルト値です。好きに変更してください)
+4(オプション). フルスクリーン表示のユーティリティを使うと便利です。OSXなら、MagazoomerとSafariの組合せがおすすめです。
+
+=== リポジトリ
+
+git://github.com/kakutani/kaigi_timekeeper.git
+
+=== 書いた人
+
+Kakutani Shintaro (shintaro at kakutani dot com), http://kakutani.com
+
+=== 謝辞
+
+* とろ庵さん: 無料のデジタル時計フォント'7barPBd', http://www.trojanbear.net/omake.htm
+* さかとくさん: JS + Flash で mp3を再生するsoundapi, http://labs.unoh.net/2006/11/javascriptmp3.html
+* すずきみほ(also known as 鈴音ミホ)さん: アナウンス音声提供
