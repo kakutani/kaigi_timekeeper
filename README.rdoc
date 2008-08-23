@@ -26,10 +26,8 @@ Kaigi TimeKeeper requires local proxy http server to workaround the Flash securi
 
 0. Install SEVENBAR bold font(named '7barPBd') via http://www.trojanbear.net/omake.htm
 1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
-2. $ ruby timekeepersrv
-   (If you don't have ruby, you can write similar http proxy.)
-3. http://localhost:8111 via some web browser.
-  (8111 is default and configurable.)
+2. $ ruby timekeepersrv (If you don't have ruby, you can write similar http proxy.)
+3. http://localhost:8111 via some web browser. (8111 is default and configurable.)
 4(optional). Some fullscreen utility should be useful. Megazoomer on OSX,for example.
 
 === Repository

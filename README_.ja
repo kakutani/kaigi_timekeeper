@@ -29,10 +29,8 @@ Kaigi Timekeeprで音声による残り時間アナウンスを行うために�
 
 0. タイマー用のデジタル時計表示用にSEVENBAR boldフォント('7barPBd')をインストールしておいてください。入手先は、 http://www.trojanbear.net/omake.htm です。
 1. $ git clone git://github.com/kakutani/kaigi_timekeeper.git
-2. $ ruby timekeepersrv
-   (HTTPプロキシサーバなら何でもよいです)
-3. ブラウザで http://localhost:8111 にアクセスしてください
-  (8111 はtimekeepersrvのデフォルト値です。好きに変更してください)
+2. $ ruby timekeepersrv  (HTTPプロキシサーバなら何でもよいです)
+3. ブラウザで http://localhost:8111 にアクセスしてください (8111 はtimekeepersrvのデフォルト値です。好きに変更してください)
 4(オプション). フルスクリーン表示のユーティリティを使うと便利です。OSXなら、MagazoomerとSafariの組合せがおすすめです。
 
 === リポジトリ
