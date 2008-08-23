@@ -1,37 +1,38 @@
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <title>Timer</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="debug" sytle="background-color:#000;color:#fff")></div>
-<div id="timer"></div>
-<div id="conf">
-  <form id="conf_form">
-	  <strong>モード:</strong>&nbsp;<input type="radio" name="mode" value="lightning" id="mode_lightning" /><label for="mode_lightning">LT</label>&nbsp;&nbsp;
-	  <input type="radio" name="mode" value="10min" id="mode_10" /><label for="mode_10">10分</label>&nbsp;&nbsp;
-	  <input type="radio" name="mode" value="15min" id="mode_15" /><label for="mode_15">15分</label>&nbsp;&nbsp;
-	  <input type="radio" name="mode" value="30min" id="mode_30" /><label for="mode_30">30分</label>&nbsp;&nbsp;
-	  <input type="radio" name="mode" value="test" id="mode_test" /><label for="mode_test">テスト</label>&nbsp;&nbsp;
-<br />
-持ち時間: <input type="text" name="talk" size="4" class="prop" />秒&nbsp;<br />
-警告: 残り<input type="text" name="warning_on" size="4" class="prop" />秒から<br />
-鈴音ミホ:
-<input type="checkbox" name="miho" value="1" id="miho_1" /><label for="miho_1">1分</label>
-<input type="checkbox" name="miho" value="2" id="miho_2" /><label for="miho_2">2分</label>
-<input type="checkbox" name="miho" value="3" id="miho_3" /><label for="miho_3">3分</label>
-<input type="checkbox" name="miho" value="4" id="miho_4" /><label for="miho_4">4分</label>
-<input type="checkbox" name="miho" value="5" id="miho_5" /><label for="miho_5">5分</label>
-  </form>
-</div>
-  <script src="jquery-1.2.6.min.js" type="text/javascript"></script>
-  <script src="jquery.dimensions.min.js" type="text/javascript"></script>
-  <script src="jquery.hotkeys.js" type="text/javascript"></script>
-  <script src="swfobject.js" type="text/javascript"></script>
-  <script src="soundapi.js" type="text/javascript"></script>
-  <script src="sprintf.js" type="text/javascript"></script>
-  <script src="timer.js" type="text/javascript"></script>
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Kaigi TimeKeepr</title>
+  </head>
+  <body>
+    <div id="timer"></div>
+    <div id="conf">
+      <form id="conf_form">
+        <strong>モード:</strong>&nbsp;
+        <input type="radio" name="mode" value="lightning" id="mode_lightning" /><label for="mode_lightning">LT</label>&nbsp;&nbsp;
+        <input type="radio" name="mode" value="10min" id="mode_10" /><label for="mode_10">10分</label>&nbsp;&nbsp;
+        <input type="radio" name="mode" value="15min" id="mode_15" /><label for="mode_15">15分</label>&nbsp;&nbsp;
+        <input type="radio" name="mode" value="30min" id="mode_30" /><label for="mode_30">30分</label>&nbsp;&nbsp;
+        <input type="radio" name="mode" value="test" id="mode_test" /><label for="mode_test">テスト</label>&nbsp;&nbsp;
+        <br />
+        持ち時間: <input type="text" name="talk" size="4" />秒&nbsp;<br />
+        警告: 残り<input type="text" name="warning_on" size="4"  />秒から<br />
+        鈴音ミホ:
+        <input type="checkbox" name="miho" value="1" id="miho_1" /><label for="miho_1">1分</label>
+        <input type="checkbox" name="miho" value="2" id="miho_2" /><label for="miho_2">2分</label>
+        <input type="checkbox" name="miho" value="3" id="miho_3" /><label for="miho_3">3分</label>
+        <input type="checkbox" name="miho" value="4" id="miho_4" /><label for="miho_4">4分</label>
+        <input type="checkbox" name="miho" value="5" id="miho_5" /><label for="miho_5">5分</label>
+      </form>
+    </div>
+    <script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+    <script src="jquery.dimensions.min.js" type="text/javascript"></script>
+    <script src="jquery.hotkeys.js" type="text/javascript"></script>
+    <script src="swfobject.js" type="text/javascript"></script>
+    <script src="soundapi.js" type="text/javascript"></script>
+    <script src="sprintf.js" type="text/javascript"></script>
+    <script src="kaigi_timekeeper.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -1,31 +1,31 @@
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #7B8C5A;
+    margin: 0;
+    padding: 0;
+    background-color: #7B8C5A;
 }
 
 #timer {
-	z-index: -1;
-	position: fixed;
-	padding: 0;
-	top: 0;
-	margin: 0 auto;
-	text-align: center;
-	font-family: '7barPBd';
+    z-index: -1;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: '7barPBd';
 }
 
 #conf {
-	z-index: 10000;
-	background: url("conf-bg.png");
-	color: #fff;
-	position:fixed;
-	bottom:0;
-	left:0;
-	padding:10px;
-	width: 100%;
+    z-index: 10000;
+    background: url("conf-bg.png");
+    color: #fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding:10px;
+    width: 100%;
 }
 
 #conf * {
-	line-height: 1.5;
-	font-size: 22px;
+    line-height: 1.5;
+    font-size: 22px;
 }

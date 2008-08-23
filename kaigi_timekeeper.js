@@ -1,13 +1,9 @@
-/*
-theTimer: メインの処理をやってる。UIとモデルの橋渡し? Controller??
-TalkTimer: カウントダウンが仕事
-NullTimer: TimerのNullオブジェクト
-*/
+/* Copyright (c) 2008 KAKUTANI Shintaro
+ * You can redistribute this and/or modify it under MIT License
+ */
 var timerStatus = {"stop":0, "runNormal":1, "runWarn":2, "timeOver":3};
-var timerStatusLabel = ["停止","作動中", "警告", "時間切れ"];
-
 var ditital_bgcolor = "#7B8C5A";
-var _miho_count = 0; // FIXME 音声再生時にsetTimeOutから見えるようにするため
+var _miho_count = 0; // FIXME: It uses on usessetTimeOut...
 
 var theTimer = {
    target: null,
@@ -184,12 +180,13 @@ function initializeTimerFontSize() {
   var t_w = $("#timer").width();
   var t_h = $("#timer").height();
 
-   var fontSize = Math.min((d_w / t_w) * 8  , (d_h / t_h) * 8);
+  // FIXME '8' is just a magic number...
+  var fontSize = Math.min((d_w / t_w) * 8  , (d_h / t_h) * 8);
 
-   var resized_w = $("#timer").width();
-   var resized_h = $("#timer").height();
-   var top_margin = (d_h - resized_h) / 4;
-   $("#timer").css("display", "block")
+  var resized_w = $("#timer").width();
+  var resized_h = $("#timer").height();
+  var top_margin = (d_h - resized_h) / 4;
+  $("#timer").css("display", "block")
 	.css("font-size", Math.floor(fontSize) - 10)
 	.css("top", top_margin).show();
 }
