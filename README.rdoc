@@ -2,7 +2,7 @@
 
 'Kaigi Timekeepr' is a browser based Timekeeper application for conferences.
 Initially, this application was written for Tokyo RubyKaigi01.
-(That is an Regional RubyKaigi instance, http://regional.rubykaigi.org/tokyo01)
+(That is a Regional RubyKaigi instance, http://regional.rubykaigi.org/tokyo01)
 
 === Live Demo
 
